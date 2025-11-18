@@ -2,7 +2,7 @@
 // send_commission.php
 
 // Configuration - Update with your email address
-$to_email = "your-email@example.com";
+$to_email = "coderjohndoe63841@gmail.com";
 $subject = "New Moodboard Commission Request";
 
 // Get form data
@@ -43,4 +43,5 @@ $success = mail($to_email, $subject, $message, $headers);
 // Return JSON response
 header('Content-Type: application/json');
 echo json_encode(['success' => $success]);
+
 ?>
